@@ -18,13 +18,26 @@ export default function TaskAchievement(){
     const completeCount = completedTask.length;
     const incompleteCount = incompleteTask.length;
 
-    const completeRate = (completeCount/tasks.length)*100;
-    const completeRateValue = parseFloat(completeRate.toFixed(1))
-    const incompleteRate = (incompleteCount/tasks.length)*100;
-    const incompleteRateValue = parseFloat(incompleteRate.toFixed(1))
-
+    let completeRate;
+    let incompleteRate;
     let completeNoun;
     let incompleteNoun;
+
+    if(tasks.length===0){
+        completeRate = 0;
+    }
+    else{
+        completeRate = (completeCount/tasks.length)*100;
+    }
+
+    if(tasks.length === 0){
+        incompleteRate = 0
+    }
+    else{
+        incompleteRate = (incompleteCount/tasks.length)*100;
+    }
+    const completeRateValue = parseFloat(completeRate.toFixed(1))
+    const incompleteRateValue = parseFloat(incompleteRate.toFixed(1))
 
     if(completeCount < 2){
         completeNoun = "task"

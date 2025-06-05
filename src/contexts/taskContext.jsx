@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 const TaskContext = createContext();
 
@@ -20,7 +20,6 @@ const TaskProvider = ({children}) => {
 
     function addTask(newTaskData){
         const newTask = { id:nanoid(), ...newTaskData};
-        // setTasks(prevTask => [...prevTask, newTask]);
         const updatedTasks = [...tasks, newTask]
         setTasks(updatedTasks);
         localStorage.setItem('tasks', JSON.stringify(updatedTasks))
@@ -29,7 +28,7 @@ const TaskProvider = ({children}) => {
     const deleteTask = (id) => {
         const remainingTasks = tasks.filter((task) => id !== task.id);
         setTasks(remainingTasks);
-        localStorage.setItem('tasks', JSON.stringify(remainingTasks))
+        localStorage.setItem('tasks', JSON.stringify(remainingTasks));
     }
 
     const markTaskCompleted = (id) => {
@@ -40,18 +39,18 @@ const TaskProvider = ({children}) => {
             return task;
         });
         setTasks(updatedTasks);
-        localStorage.setItem('tasks', JSON.stringify(updatedTasks))
+        localStorage.setItem('tasks', JSON.stringify(updatedTasks));
     }
 
     const editTask = (updatedTask) => {
-        const editedTasks = tasks.map(task => task.id === updatedTask.id ? updatedTask :task)
+        const editedTasks = tasks.map(task => task.id === updatedTask.id ? updatedTask :task);
         setTasks(editedTasks);
-        localStorage.setItem('tasks', JSON.stringify(editedTasks))
+        localStorage.setItem('tasks', JSON.stringify(editedTasks));
         setEditingTask(null);
     }
 
     const startEditing = (task) => {
-        setEditingTask(task)
+        setEditingTask(task);
     }
 
     return (

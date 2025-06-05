@@ -41,9 +41,7 @@ export default function Login(){
                     <Link className="text-violet-700  font-medium cursor-pointer hover:text-violet-900 hover:underline hover:underline-offset-4">
                         Forgot your password?
                     </Link>
-                </div>
-
-                
+                </div>    
             </div>
         </div>
     )
