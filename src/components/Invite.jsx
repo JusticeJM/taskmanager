@@ -3,7 +3,7 @@ import { IoArrowForward } from "react-icons/io5";
 
 export default function Invite(){
     return(
-        <div className="w-[90%] mx-auto mt-14 bg-violet-100 rounded-lg py-10">
+        <div className="w-[90%] mx-auto mt-18 bg-violet-100 rounded-lg py-10 md:mt-40 md:mb-20">
             <section className="font-sans text-center">
                 <div>
                     <h4 className="text-black text-2xl font-semibold">

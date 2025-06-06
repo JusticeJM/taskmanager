@@ -10,7 +10,7 @@ export default function FeatureSection(){
     const title3 = "Boost your productivity"; 
     const description3 = "Prioritize tasks and create a structured routine to optimize the efficincy.";
     return(
-        <div className="w-full mx-3 pt-14 md:w-[85%] md:mx-auto ">
+        <div className="w-full mx-3 pt-26 md:w-[85%] md:mx-auto md:pt-40 ">
             <div className="font-sans text-center pb-5">
                 <h4 className="text-black/90 text-2xl font-semibold">
                     What <span className="text-violet-900">muliTASK</span> offers

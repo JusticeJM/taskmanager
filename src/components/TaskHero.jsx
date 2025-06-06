@@ -3,7 +3,7 @@ import { IoArrowForward } from "react-icons/io5";
 
 export default function TaskHero(){
     return(
-        <div className="relative w-full mt-10 md:mt-20 md:w-[85%] md:mx-auto ">
+        <div className="relative w-full mt-18 md:mt-30 md:w-[85%] md:mx-auto ">
             <div className="font-sans text-center">
                 <section>
                     <h1 className="text-black font-semibold text-2xl sm:text-3xl md:text-4xl ">

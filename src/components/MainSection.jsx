@@ -4,7 +4,7 @@ import TaskStatsTwo from "./TaskStatsTwo";
 
 export default function MainSection(){
     return(
-        <div className="mt-18 w-full lg:w-[90%] lg:mx-auto ">
+        <div className="mt-18 w-full md:pt-40 lg:w-[90%] lg:mx-auto">
             <div className="">
                 <h4 className="text-black/90 text-2xl font-semibold tracking mb-7 text-center px-10">
                     The right time to improve the way you manage tasks daily.
