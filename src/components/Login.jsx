@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Login(){
     return(
-        <div className="w-full bg-white font-sans">
+        <div className="w-full bg-white font-sans shadow-md">
             <div className="p-6 flex items-center justify-between font-sans mb-7">
                 <Link to="/" className="text-violet-900 font-semibold text-xl">muliTASK</Link>
                 <div className="inline-flex space-x-2 text-sm font-normal text-black/70">
